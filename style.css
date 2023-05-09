@@ -16,7 +16,7 @@ body{
 }
 
 .modal{
-  display:none;
+  display:none; 
   position:fixed;
   z-index:1;
   left:0;
@@ -25,6 +25,8 @@ body{
   width:100%;
   overflow:auto;
   background-color:rgba(0,0,0,0.5);
+  animation-name:modalopen;
+  animation-duration:1s;
 }
 
 .modal-content{
@@ -47,3 +49,7 @@ body{
   cursor:pointer;
 }
 
+@keyframes modalopen{
+  from{ opacity: 0}
+  to {opacity: 1}
+}
